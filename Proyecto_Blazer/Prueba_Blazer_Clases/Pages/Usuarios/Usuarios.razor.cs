@@ -1,6 +1,6 @@
-﻿using Blazor.Interfaces;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Modelos;
+using Prueba_Blazer_Clases.Interfaces;
 
 namespace Blazor.Pages.Usuarios;
 
@@ -12,7 +12,7 @@ partial class Usuarios
 
     protected override async Task OnInitializedAsync()
     {
-        usuariosLista = await _usuarioServicio.GetLista();
+        usuariosLista = await _usuarioServicio.Getlista();
     }
 
 }
